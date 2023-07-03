@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Lora:wght@600&family=Moirai+One&family=Pacifico&family=Titillium+Web:wght@400;900&display=swap');
+
+ 
+ /* Variaveis de cor/fonte */
+
+:root {
+    --main-color: #00ADB5;
+    --text-color: #eee;
+    --background-color: #222831;
+    --big-font: 3.4em;
+    --h2-font: 2rem;
+    --p-font: 0.9rem;
+}
+
+  /* Corpo do site  */
+
+body {
+    font-family: Arial, sans-serif;
+  
+    background-color: var(--background-color);
+   
+  }
+
+  /* Formatação do logo do site */
+
+.logo {
+    color: var(--main-color);
+    font-size: var(--big-font);
+    font-style: italic;
+    margin-right: 150px;
+    font-family: 'Moirai One', cursive;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+
+  /* Estilos da barra de navegação */
+
+nav {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    margin-right: 60px;
+    text-indent: 30px;
+  }
+
+  
+ul {
+    list-style-type: none;
+    padding-top: 10px;
+    margin: 0;
+    float: right;
+  }
+
+  
+li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: 0.5s;
+  }
+
+
+ a:hover {
+    background: var(--main-color);
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    box-shadow: 0 20 0 30 rgba(0, 0, 0, 0.5)
+  }
+
+.active {
+    background: var(--main-color);
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+   /* Formtação da primeira seção */
+  
+
+  
+  img {
+    padding-top: 40px;
+    width: 450px; 
+    margin-left: 700px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 3, 0.3)
+  
+  }
+
+  div   {
+    flex-direction: column-reverse;
+    height: 80vh;
+    width: 500px;
+    padding-left: 150px;
+    margin-top: -400px
+  }
+   h1 {
+    font-size: var(--big-font);
+    color: var(--main-color);
+   }
+
+   h2 {
+    font-size: var(--h2-font);
+    color: var(--text-color);
+   }
+   
+   button {
+    padding: 10px;
+    color: var(--text-color);
+    background: var(--main-color);
+    font-weight: 600;
+   }
+  
+
+  /* Estilos das seções de conteúdo */
+  
+  
+  html {
+    scroll-behavior: smooth;
+  }
