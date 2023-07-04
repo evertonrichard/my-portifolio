@@ -182,18 +182,18 @@ section#About2 p {
  }
 
 section#About .fa-instagram {
-   color: #00ADB5;
+   color: var(--text-color);
    font-size: 30px;    
 }
 
 section#About .fa-linkedin {
-    color: #00ADB5;
+    color: var(--text-color);
     font-size: 30px;
     
 }
 
 section#About .fa-github {
-    color: #00ADB5;
+    color: var(--text-color);
     font-size: 30px;
     align-items: center;
     
