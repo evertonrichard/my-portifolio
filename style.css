@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Lora:wght@600&family=Moirai+One&family=Pacifico&family=Titillium+Web:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Libre+Baskerville:wght@700&family=Lora:wght@600&family=Moirai+One&family=Pacifico&family=Titillium+Web:wght@400;900&display=swap');
 
 /* Variaveis de cor/fonte */
+
 :root {
     --main-color: #00ADB5;
     --text-color: #eee;
@@ -11,6 +13,7 @@
 }
 
 /* Corpo do site */
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
@@ -19,6 +22,7 @@ body {
 }
 
 /* Formatação do logo do site */
+
 .logo {
     color: var(--main-color);
     font-size: var(--big-font);
@@ -30,6 +34,7 @@ body {
 }
 
 /* Estilos da barra de navegação */
+
 nav {
     position: relative;
     padding: 10px;
@@ -56,7 +61,7 @@ a {
     transition: 0.5s;
 }
 
-a:hover {
+ ul li a:hover {
     background: var(--main-color);
     padding: 10px;
     border-radius: 20px;
@@ -70,7 +75,8 @@ a:hover {
     padding: 10px;
 }
 
-/* Formatação da primeira seção */
+/* Formatação da primeira section */
+
 section#About {
     display: flex;
     align-items: center;
@@ -83,7 +89,7 @@ section#About img {
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 3, 0.3);
+    filter: drop-shadow(0 0 10px #00ADB5);
 }
 
 section#About div {
@@ -96,11 +102,13 @@ section#About div {
 section#About h1 {
     font-size: var(--big-font);
     color: var(--main-color);
+    font-family: 'Libre Baskerville', serif;
 }
 
-section#About h2 {
+section#About h2#developer {
     font-size: var(--h2-font);
     color: var(--text-color);
+    font-family: 'Libre Baskerville', serif;
 }
 
 section#About button {
@@ -108,15 +116,91 @@ section#About button {
     color: var(--text-color);
     background: var(--main-color);
     font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
+    border-radius: 15px;
     transition: 0.5s;
 }
+
 section#About button:hover {
     color: black;
     box-shadow: 0 3px 0 7px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+}
 
+/* Formatação da segunda section */
+
+section#About2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    text-align: center;
+    height: 80vh;
+}
+
+section#About2 img {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+section#About2 div {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+h2#aboutme {
+    margin-top: -40px;
+    font-size: var(--h2-font);
+    color: var(--main-color);
+    font-family: 'Libre Baskerville', serif;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  
+}
+
+section#About2 p {
+    margin-top: 50px;
+    color: var(--text-color);
+}
+
+/* formatação dos logos das redes sociais  */
+
+ section#About #social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    width: 100%;
+    max-width: 350px;
+    padding: 0 50px;
+    text-indent: 25px;
+    
+
+ }
+
+section#About .fa-instagram {
+   color: #00ADB5;
+   font-size: 30px;    
+}
+
+section#About .fa-linkedin {
+    color: #00ADB5;
+    font-size: 30px;
+    
+}
+
+section#About .fa-github {
+    color: #00ADB5;
+    font-size: 30px;
+    align-items: center;
+    
+    
 }
 /* Estilos das seções de conteúdo */
+
 section {
     padding: 50px;
     text-align: center;
@@ -126,3 +210,112 @@ section h1 {
     font-size: var(--big-font);
     
 }
+
+/* Estilos para telas grandes */
+
+@media screen and (min-width: 768px) {
+
+    /* Estilos para a navegação */
+    
+    .responsive {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .logo {
+      font-size: 24px;
+    }
+    
+    .responsive ul {
+      display: flex;
+      align-items: center;
+    }
+    
+    .responsive ul li {
+      margin-left: 20px;
+    }
+    
+    /* Estilos para a seção About */
+
+    #About {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    #About img {
+      width: 40%;
+    }
+    
+    #About div {
+      width: 55%;
+    }
+  }
+  
+  /* Estilos para telas pequenas */
+
+  @media screen and (max-width: 767px) {
+
+    /* Estilos para a navegação */
+
+    .responsive ul {
+      display: none;
+    }
+    
+    .responsive label.logo {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    
+    .responsive .menu-icon {
+      display: block;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    
+    .responsive .menu-icon i {
+      font-size: 24px;
+    }
+    
+    .responsive .active {
+      display: block;
+      margin-top: 20px;
+    }
+    
+    /* Estilos para o menu responsivo */
+
+    .responsive .active ul {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .responsive .active ul li {
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    /* Estilos para a seção About */
+
+    #About {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    #About img {
+      width: 80%;
+      margin-top: 20px;
+    }
+    
+    #About div {
+      width: 90%;
+      margin-top: 20px;
+    }
+    
+    /* Estilos para a seção About2 */
+
+    #About2 img {
+      width: 80%;
+      margin: 20px auto;
+    }
+  }
