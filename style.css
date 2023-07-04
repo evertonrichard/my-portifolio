@@ -184,20 +184,37 @@ section#About2 p {
 section#About .fa-instagram {
    color: var(--text-color);
    font-size: 30px;    
+   transition: 0.5s;
 }
 
 section#About .fa-linkedin {
     color: var(--text-color);
     font-size: 30px;
+    transition: 0.5s;
     
 }
 
 section#About .fa-github {
     color: var(--text-color);
     font-size: 30px;
-    align-items: center;
+    transition: 0.5s;
     
     
+}
+
+section#About .fa-instagram:hover {
+    color: var(--main-color);
+
+}
+
+section#About .fa-linkedin:hover {
+    color: var(--main-color);
+
+}
+
+section#About .fa-github:hover {
+    color: var(--main-color);
+
 }
 /* Estilos das seções de conteúdo */
 
