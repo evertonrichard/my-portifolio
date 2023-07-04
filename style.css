@@ -66,7 +66,7 @@ a {
     padding: 10px;
     border-radius: 20px;
     color: black;
-    box-shadow: 0 3px 0 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .active {
@@ -172,7 +172,7 @@ section#About2 p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 50px;
+   
     width: 100%;
     max-width: 350px;
     padding: 0 50px;
@@ -211,111 +211,3 @@ section h1 {
     
 }
 
-/* Estilos para telas grandes */
-
-@media screen and (min-width: 768px) {
-
-    /* Estilos para a navegação */
-    
-    .responsive {
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    .logo {
-      font-size: 24px;
-    }
-    
-    .responsive ul {
-      display: flex;
-      align-items: center;
-    }
-    
-    .responsive ul li {
-      margin-left: 20px;
-    }
-    
-    /* Estilos para a seção About */
-
-    #About {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    
-    #About img {
-      width: 40%;
-    }
-    
-    #About div {
-      width: 55%;
-    }
-  }
-  
-  /* Estilos para telas pequenas */
-
-  @media screen and (max-width: 767px) {
-
-    /* Estilos para a navegação */
-
-    .responsive ul {
-      display: none;
-    }
-    
-    .responsive label.logo {
-      font-size: 20px;
-      margin-left: 20px;
-    }
-    
-    .responsive .menu-icon {
-      display: block;
-      cursor: pointer;
-      margin-right: 20px;
-    }
-    
-    .responsive .menu-icon i {
-      font-size: 24px;
-    }
-    
-    .responsive .active {
-      display: block;
-      margin-top: 20px;
-    }
-    
-    /* Estilos para o menu responsivo */
-
-    .responsive .active ul {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .responsive .active ul li {
-      text-align: center;
-      margin-top: 10px;
-    }
-    
-    /* Estilos para a seção About */
-
-    #About {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    
-    #About img {
-      width: 80%;
-      margin-top: 20px;
-    }
-    
-    #About div {
-      width: 90%;
-      margin-top: 20px;
-    }
-    
-    /* Estilos para a seção About2 */
-
-    #About2 img {
-      width: 80%;
-      margin: 20px auto;
-    }
-  }
